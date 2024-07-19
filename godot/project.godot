@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Block Makro"
-run/main_scene="res://scenes/control.tscn"
+run/main_scene="res://scenes/app.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/subwindows/embed_subwindows=false
 
 [rendering]
 

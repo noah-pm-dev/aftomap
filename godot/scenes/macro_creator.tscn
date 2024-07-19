@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://lhpymlxjitdw"]
+
+[ext_resource type="Texture2D" uid="uid://lc8nhsdmabrx" path="res://icon.svg" id="1_ekn3t"]
+[ext_resource type="Script" path="res://scripts/test.gd" id="1_nmeij"]
+[ext_resource type="Script" path="res://scripts/VBoxContainer.gd" id="2_ar60b"]
+
+[node name="Window" type="Window"]
+title = "Macro Editor"
+initial_position = 4
+size = Vector2i(704, 672)
+min_size = Vector2i(704, 672)
+max_size = Vector2i(704, 672)
+
+[node name="Canvas" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(513, 0)
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -513.0
+grow_horizontal = 0
+grow_vertical = 2
+color = Color(0.00132552, 0.21819, 0.792481, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Canvas"]
+custom_minimum_size = Vector2(996.117, 1304.85)
+layout_mode = 0
+offset_right = 513.0
+offset_bottom = 1304.85
+scale = Vector2(0.515, 0.515)
+theme_override_constants/separation = -1
+script = ExtResource("2_ar60b")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(191, 672)
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 191.0
+grow_vertical = 2
+color = Color(0.0588235, 0.282353, 0.662745, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -46.78
+offset_top = 93.18
+offset_right = 144.22
+offset_bottom = 1033.18
+grow_horizontal = 2
+scale = Vector2(0.465, 0.465)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 65
+
+[node name="test" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = ExtResource("1_ekn3t")
+script = ExtResource("1_nmeij")
+
+[node name="test2" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = ExtResource("1_ekn3t")
+script = ExtResource("1_nmeij")
+
+[node name="test3" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = ExtResource("1_ekn3t")
+script = ExtResource("1_nmeij")
+
+[node name="test4" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = ExtResource("1_ekn3t")
+script = ExtResource("1_nmeij")
+
+[node name="test5" type="Button" parent="ColorRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+icon = ExtResource("1_ekn3t")
+script = ExtResource("1_nmeij")
